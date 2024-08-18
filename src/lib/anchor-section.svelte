@@ -16,8 +16,8 @@
 		font-size: 1rem;
 	}
 
-	section {
-		margin-top: 24px;
+	section:not(:last-child) {
+		margin-bottom: 24px;
 	}
 
 	h2 {
