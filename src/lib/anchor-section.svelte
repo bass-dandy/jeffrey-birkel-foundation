@@ -28,5 +28,6 @@
 
 	p {
 		font-size: 1.25rem;
+		white-space: pre-wrap;
 	}
 </style>

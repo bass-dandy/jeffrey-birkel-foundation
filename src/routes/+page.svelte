@@ -7,9 +7,10 @@
 
 <main>
 	<div class="banner">
-		<img src="construction.gif" alt="" />
-		<h1>Jeffrey Birkel Foundation</h1>
-		<img src="construction.gif" alt="" />
+		<img src="banner.jpg" alt="" />
+		<div class="banner-text">
+			<h1>Jeffrey Birkel Foundation</h1>
+		</div>
 	</div>
 
 	<div class="column-layout">
@@ -26,16 +27,36 @@
 </main>
 
 <style>
-	main {
-		padding: 64px 32px;
+	.banner {
+		position: relative;
+	}
+
+	.banner img {
+		width: 100%;
+	}
+
+	.banner-text {
+		position: absolute;
+		background: rgba(0, 0, 0, 0.75);
+		top: 16px;
+		left: 32px;
+		padding: 4px 16px;
+	}
+
+	.banner h1 {
+		color: white;
+		margin: 0;
+		padding: 0;
 	}
 
 	.column-layout {
 		display: flex;
 		position: relative;
-		gap: 24px;
+		gap: 32px;
+		padding:  32px 32px 64px;
 		margin-top: 24px;
 		align-items: flex-start;
+		background: white;
 	}
 
 	.sidebar {
@@ -48,17 +69,5 @@
 
 	.main-content {
 		flex: 1;
-	}
-
-	.banner {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 24px;
-	}
-
-	.banner img {
-		height: 64px;
-		width: auto;
 	}
 </style>
