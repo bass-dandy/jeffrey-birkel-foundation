@@ -17,12 +17,12 @@
 	}
 
 	section:not(:last-child) {
-		margin-bottom: 24px;
+		margin-bottom: var(--spacing-lg);
 	}
 
 	h2 {
 		margin: 0;
-		margin-bottom: 8px;
+		margin-bottom: var(--spacing-sm);
 		font-size: 2rem;
 	}
 

@@ -34,7 +34,7 @@
 		{#each linkConfig as { name, url, Icon }}
 			<li>
 				<a href={url} target="_blank" rel="noopener noreferrer">
-					<Icon fill="white" height="1rem" />
+					<Icon fill="currentColor" height="1rem" />
 				</a>
 			</li>
 		{/each}
@@ -48,16 +48,21 @@
 		justify-content: center;
 		background: black;
 		border-radius: 50%;
-		height: 32px;
-		width: 32px;
+		height: var(--spacing-lg);
+		width: var(--spacing-lg);
+		color: var(--color-white);
+	}
+
+	a:hover {
+		color: var(--color-accent);
 	}
 
 	ul {
 		list-style-type: none;
 		display: flex;
 		align-items: center;
-		gap: 4px;
-		margin: 8px 0 0 0;
+		gap: var(--spacing-xs);
+		margin: var(--spacing-sm) 0 0 0;
 		padding: 0;
 	}
 </style>

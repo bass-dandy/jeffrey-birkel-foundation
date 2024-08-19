@@ -1,3 +1,15 @@
+:root {
+	--color-white: #fff;
+	--color-black: #000;
+	--color-accent: rgb(246, 166, 81);
+
+	--spacing-xs: 4px;
+	--spacing-sm: 8px;
+	--spacing-md: 16px;
+	--spacing-lg: 32px;
+	--spacing-xl: 64px;
+}
+
 html, body {
 	padding: 0;
 	margin: 0;

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import AnchorSection from '$lib/anchor-section.svelte';
-	import TableOfContents from '$lib/table-of-contents.svelte';
-	import SocialShare from '$lib/social-share.svelte';
+	import Nav from '$lib/nav.svelte';
 	import sections from '$lib/sections.json';
 </script>
 
@@ -13,11 +12,8 @@
 		</div>
 	</div>
 
-	<div class="column-layout">
-		<div class="sidebar">
-			<TableOfContents />
-			<SocialShare />
-		</div>
+	<div class="layout">
+		<Nav />
 		<div class="main-content">
 			{#each Object.entries(sections) as [id, section]}
 				<AnchorSection id={id} title={section.title} body={section.body} />
@@ -26,9 +22,11 @@
 	</div>
 </main>
 
-<style>
+<style lang="scss">
+	@import '../mixins.scss';
+
 	main {
-		padding-bottom: 64px;
+		padding-bottom: var(--spacing-xxl);
 	}
 
 	.banner {
@@ -42,9 +40,9 @@
 	.banner-text {
 		position: absolute;
 		background: rgba(0, 0, 0, 0.75);
-		top: 16px;
-		left: 32px;
-		padding: 4px 16px;
+		top: var(--spacing-md);
+		left: var(--spacing-lg);
+		padding: var(--spacing-xs) var(--spacing-md);
 	}
 
 	.banner h1 {
@@ -53,49 +51,28 @@
 		padding: 0;
 	}
 
-	.column-layout {
+	.layout {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		position: relative;
-		gap: 32px;
+		gap: var(--spacing-lg);
 		background: white;
-	}
-
-	.sidebar {
-		display: flex;
-		gap: 16px;
-		position: sticky;
-		top: 0;
-		width: 100%;
-		justify-content: space-between;
-		background: white;
-		box-sizing: border-box;
-		padding: 8px 32px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 	}
 
 	.main-content {
 		flex: 1;
-		padding: 0 32px;
+		padding: 0 var(--spacing-lg);
 	}
 
-	@media (min-width:751px) {
-		.column-layout {
+	@include breakpoint-sm {
+		.layout {
 			flex-direction: row;
-			padding-top: 24px;
-		}
-
-		.sidebar {
-			flex-direction: column;
-			justify-content: flex-start;
-			width: auto;
-			padding: 0 0 0 32px;
-			box-shadow: none;
+			padding-top: var(--spacing-lg);
 		}
 
 		.main-content {
-			padding: 0 32px 0 0;
+			padding: 0 var(--spacing-lg) 0 0;
 		}
 	}
 </style>

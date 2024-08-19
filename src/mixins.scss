@@ -1,0 +1,3 @@
+@mixin breakpoint-sm {
+	@media (min-width: 751px) { @content; }
+}

@@ -10,23 +10,25 @@
 	{/each}
 </ul>
 
-<style>
+<style lang="scss">
+	@import '../mixins.scss';
+
 	ul {
 		display: flex;
-		gap: 16px;
+		gap: var(--spacing-md);
 		align-items: flex-start;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 	}
 
-	@media (min-width:751px) {
+	@include breakpoint-sm {
 		ul {
 			flex-direction: column;
 		}
 
 		li {
-			gap: 12px;
+			gap: var(--spacing-sm);
 		}
 	}
 </style>
