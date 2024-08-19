@@ -27,6 +27,10 @@
 </main>
 
 <style>
+	main {
+		padding-bottom: 64px;
+	}
+
 	.banner {
 		position: relative;
 	}
@@ -51,23 +55,47 @@
 
 	.column-layout {
 		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 		position: relative;
 		gap: 32px;
-		padding:  32px 32px 64px;
-		margin-top: 24px;
-		align-items: flex-start;
 		background: white;
 	}
 
 	.sidebar {
+		display: flex;
+		gap: 16px;
 		position: sticky;
 		top: 0;
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
+		width: 100%;
+		justify-content: space-between;
+		background: white;
+		box-sizing: border-box;
+		padding: 8px 32px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 	}
 
 	.main-content {
 		flex: 1;
+		padding: 0 32px;
+	}
+
+	@media (min-width:751px) {
+		.column-layout {
+			flex-direction: row;
+			padding-top: 24px;
+		}
+
+		.sidebar {
+			flex-direction: column;
+			justify-content: flex-start;
+			width: auto;
+			padding: 0 0 0 32px;
+			box-shadow: none;
+		}
+
+		.main-content {
+			padding: 0 32px 0 0;
+		}
 	}
 </style>

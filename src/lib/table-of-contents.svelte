@@ -12,12 +12,21 @@
 
 <style>
 	ul {
+		display: flex;
+		gap: 16px;
+		align-items: flex-start;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 	}
 
-	li {
-		margin: 12px 0;
+	@media (min-width:751px) {
+		ul {
+			flex-direction: column;
+		}
+
+		li {
+			gap: 12px;
+		}
 	}
 </style>
