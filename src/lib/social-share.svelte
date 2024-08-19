@@ -7,22 +7,22 @@
 	const linkConfig = [
 		{
 			name: 'Facebook',
-			url: 'https://www.facebook.com/sharer/sharer.php?u=https://jeffreybirkel.com',
+			url: 'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjeffreybirkel.org',
 			Icon: FacebookIcon,
 		},
 		{
 			name: 'Twitter',
-			url: 'https://twitter.com/intent/tweet?url=https://jeffreybirkel.com',
+			url: 'https://twitter.com/intent/tweet?url=https%3A%2F%2Fjeffreybirkel.org',
 			Icon: TwitterIcon,
 		},
 		{
 			name: 'LinkedIn',
-			url: 'https://www.linkedin.com/sharing/share-offsite/?url=https://jeffreybirkel.com',
+			url: 'https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fjeffreybirkel.org',
 			Icon: LinkedInIcon,
 		},
 		{
 			name: 'Email',
-			url: 'mailto:?subject=Donate%20to%20ALS%20research%20and%20help%20Jeff%20get%20to%20Boston&body=https://jeffreybirkel.com',
+			url: 'mailto:?subject=Donate%20to%20ALS%20research%20and%20help%20Jeff%20get%20to%20Boston&body=https%3A%2F%2Fjeffreybirkel.org',
 			Icon: EmailIcon,
 		},
 	];
