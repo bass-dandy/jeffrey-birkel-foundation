@@ -23,7 +23,6 @@
 	h2 {
 		margin: 0;
 		margin-bottom: var(--spacing-sm);
-		font-size: 2rem;
 	}
 
 	p {
