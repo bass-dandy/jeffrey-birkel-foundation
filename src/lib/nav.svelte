@@ -13,6 +13,7 @@
 
 	.nav {
 		display: flex;
+		align-items: center;
 		gap: var(--spacing-md);
 		position: sticky;
 		top: 0;
@@ -20,17 +21,20 @@
 		justify-content: space-between;
 		background: white;
 		box-sizing: border-box;
-		padding: var(--spacing-sm) var(--spacing-lg);
+		padding: 0 var(--spacing-sm);
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		z-index: 1000;
+	}
+
+	@include breakpoint-xs {
+		.nav {
+			padding: 0 var(--spacing-md);
+		}
 	}
 
 	@include breakpoint-sm {
 		.nav {
-			flex-direction: column;
-			justify-content: flex-start;
-			width: auto;
-			padding: 0 0 0 var(--spacing-lg);
-			box-shadow: none;
+			padding: 0 var(--spacing-lg);
 		}
 	}
 </style>

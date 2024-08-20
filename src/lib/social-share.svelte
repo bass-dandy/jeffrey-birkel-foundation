@@ -28,8 +28,8 @@
 	];
 </script>
 
-<div>
-	Spread the word:
+<div class="share">
+	Share:
 	<ul>
 		{#each linkConfig as { name, url, Icon }}
 			<li>
@@ -41,7 +41,15 @@
 	</ul>
 </div>
 
-<style>
+<style lang="scss">
+	@import '../mixins.scss';
+
+	.share {
+		display: flex;
+		flex-direction: column;
+		padding: var(--spacing-sm) 0;
+	}
+
 	a {
 		display: flex;
 		align-items: center;
@@ -64,5 +72,17 @@
 		gap: var(--spacing-xs);
 		margin: var(--spacing-sm) 0 0 0;
 		padding: 0;
+	}
+
+	@include breakpoint-xs {
+		.share {
+			flex-direction: row;
+			align-items: center;
+			gap: var(--spacing-sm);
+		}
+
+		ul {
+			margin: 0;
+		}
 	}
 </style>
