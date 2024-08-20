@@ -8,8 +8,10 @@
 
 <section id={id}>
 	<h2>{title}</h2>
-	<img src={`images/${id}.jpg`} alt="" />
-	<p>{body}</p>
+	<div class="content">
+		<p>{body}</p>
+		<img src={`images/${id}.jpg`} alt="" />
+	</div>
 </section>
 
 <style lang="scss">
@@ -26,10 +28,14 @@
 		padding: var(--spacing-sm) var(--spacing-sm);
 	}
 
+	.content {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
 	p {
 		padding: 0 var(--spacing-sm);
 		margin: var(--spacing-md) 0 var(--spacing-lg);
-		font-size: 1.25rem;
 		white-space: pre-wrap;
 	}
 
@@ -46,11 +52,18 @@
 			padding: 0 var(--spacing-md);
 		}
 
+		section:nth-of-type(even) .content {
+			flex-direction: row-reverse;
+		}
+
+		.content {
+			flex-direction: row;
+			align-items: center;
+		}
+
 		 img {
-			float: right;
-			width: 400px;
-			max-width: 100%;
-			border-bottom-left-radius: 200px;
+		 	 height: 100%;
+			max-width: 50%;
 		}
 	}
 
@@ -61,6 +74,13 @@
 
 		p {
 			padding: 0 var(--spacing-lg);
+		}
+	}
+
+	@include breakpoint-md {
+		img {
+			max-width: 40%;
+			border-radius: 0;
 		}
 	}
 </style>

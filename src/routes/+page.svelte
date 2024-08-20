@@ -1,58 +1,24 @@
 <script lang="ts">
 	import AnchorSection from '$lib/anchor-section.svelte';
 	import Footer from '$lib/footer.svelte';
+	import Hero from '$lib/hero.svelte';
 	import Nav from '$lib/nav.svelte';
 	import sections from '$lib/sections.json';
 </script>
 
 <main>
-	<div class="banner">
-		<img src="images/banner.jpg" alt="" />
-		<div class="banner-text">
-			<h1>Jeffrey Birkel Foundation</h1>
-		</div>
-	</div>
+	<Hero />
 
-	<div class="layout">
-		<Nav />
-		{#each Object.entries(sections) as [id, section]}
-			<AnchorSection id={id} title={section.title} body={section.body} />
-		{/each}
-	</div>
+	<Nav />
+	{#each Object.entries(sections) as [id, section]}
+		<AnchorSection id={id} title={section.title} body={section.body} />
+	{/each}
 
 	<Footer />
 </main>
 
-<style lang="scss">
-	@import '../mixins.scss';
-
-	.banner {
-		position: relative;
-	}
-
-	.banner img {
-		width: 100%;
-	}
-
-	.banner-text {
-		position: absolute;
-		background: rgba(0, 0, 0, 0.75);
-		top: var(--spacing-md);
-		left: var(--spacing-lg);
-		padding: var(--spacing-xs) var(--spacing-md);
-	}
-
-	.banner h1 {
-		color: white;
-		margin: 0;
-		padding: 0;
-	}
-
-	.layout {
-		display: flex;
-		flex-direction: column;
-		position: relative;
-		background: white;
-		padding-bottom: var(--spacing-xl);
+<style>
+	main {
+		background: var(--color-white);
 	}
 </style>
