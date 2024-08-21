@@ -1,43 +1,50 @@
 <script lang="ts">
+	import ContentContainer from './content-container.svelte';
+
 	const progress = 0;
 </script>
 
-<div class="hero">
-	<img src="images/banner.jpg" alt="" />
-
-	<div class="hero-text">
-		<h1>Jeffrey Birkel Foundation</h1>
+<ContentContainer class="hero">
+	<img class="logo" src="images/logo.png" alt="" />
+	<div class="text">
+		<h1>Jeffrey F. Birkel Foundation</h1>
 		Donate to fund ALS research and help Jeff get to Boston!
-
 		<div class="funding">
-			${progress} raised of $20,000 goal
+			${progress.toLocaleString()} raised of $20,000 goal
 			<div class="progress">
-				<div class="progress-fill" style={`width: ${Math.floor(progress / 20000 * 100)}%;`}/>
+				<div
+					class="progress-fill"
+					style={`width: ${Math.floor(progress / 20000 * 100)}%;`}
+				/>
 			</div>
 		</div>
 	</div>
-
-</div>
+</ContentContainer>
 
 <style lang="scss">
 	@import '../mixins.scss';
 
-	.hero {
-		position: relative;
-		border-bottom: 1px solid var(--color-black);
-	}
-
-	.hero img {
-		width: 100%;
-	}
-
-	.hero-text {
+	:global(.hero) {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-md);
 		padding: var(--spacing-xs) var(--spacing-md);
+		background: var(--color-white);
 	}
 
-	.hero h1 {
+	.logo {
+		display: none;
+		width: auto;
+	}
+
+	.text {
+		flex: 1;
+	}
+
+	h1 {
 		margin: 0;
 		padding: 0;
+		color: var(--color-secondary);
 	}
 
 	.funding {
@@ -46,27 +53,30 @@
 
 	.progress {
 		width: 100%;
-		height: 12px;
+		height: 10px;
 		border-radius: 6px;
 		background: var(--color-black);
+		border: 1px solid var(--color-black);
 		overflow: hidden;
+		margin-top: var(--spacing-xs);
 	}
 
 	.progress-fill {
 		height: 100%;
 		background: var(--color-accent);
+		max-width: 100%;
 	}
 
 	@include breakpoint-xs {
-		.hero {
-			border-bottom: none;
+		.logo {
+			display: block;
+			height: 100px;
 		}
+	}
 
-		.hero-text {
-			position: absolute;
-			background: var(--color-white);
-			top: 0;
-			left: 0;
+	@include breakpoint-sm {
+		.logo {
+			height: 130px;
 		}
 	}
 </style>

@@ -1,24 +1,28 @@
 <script lang="ts">
-	import AnchorSection from '$lib/anchor-section.svelte';
 	import Footer from '$lib/footer.svelte';
 	import Hero from '$lib/hero.svelte';
+	import MyStory from '$lib/my-story.svelte';
 	import Nav from '$lib/nav.svelte';
-	import sections from '$lib/sections.json';
+	import WhatIsALS from '$lib/what-is-als.svelte';
+	import WhyDonate from '$lib/why-donate.svelte';
 </script>
 
 <main>
 	<Hero />
-
 	<Nav />
-	{#each Object.entries(sections) as [id, section]}
-		<AnchorSection id={id} title={section.title} body={section.body} />
-	{/each}
-
+	<img class="banner" src="images/banner.jpg" alt="" />
+	<MyStory />
+	<WhyDonate />
+	<WhatIsALS />
 	<Footer />
 </main>
 
 <style>
 	main {
 		background: var(--color-white);
+	}
+
+	.banner {
+		width: 100%;
 	}
 </style>

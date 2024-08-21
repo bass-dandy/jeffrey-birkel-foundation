@@ -1,40 +1,26 @@
 <script lang="ts">
-	import TableOfContents from '$lib/table-of-contents.svelte';
-	import SocialShare from '$lib/social-share.svelte';
+	import ContentContainer from './content-container.svelte';
+	import DonateButton from './donate-button.svelte';
+	import SocialShare from './social-share.svelte';
 </script>
 
-<div class="nav">
-	<TableOfContents />
+<ContentContainer class="navbar">
+	<DonateButton />
 	<SocialShare />
-</div>
+</ContentContainer>
 
-<style lang="scss">
-	@import '../mixins.scss';
-
-	.nav {
+<style>
+	:global(.navbar) {
 		display: flex;
 		align-items: center;
 		gap: var(--spacing-md);
+		justify-content: space-between;
 		position: sticky;
 		top: 0;
 		width: 100%;
-		justify-content: space-between;
-		background: white;
 		box-sizing: border-box;
-		padding: 0 var(--spacing-sm);
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		background: white;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 		z-index: 1000;
-	}
-
-	@include breakpoint-xs {
-		.nav {
-			padding: 0 var(--spacing-md);
-		}
-	}
-
-	@include breakpoint-sm {
-		.nav {
-			padding: 0 var(--spacing-lg);
-		}
 	}
 </style>

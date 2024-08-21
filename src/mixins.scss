@@ -9,3 +9,7 @@
 @mixin breakpoint-md {
 	@media (min-width: 1001px) { @content; }
 }
+
+@mixin breakpoint-lg {
+	@media (min-width: 1201px) { @content; }
+}

@@ -23,6 +23,7 @@
 :root {
 	--color-white: #fff;
 	--color-black: #000;
+	--color-secondary: rgb(203, 109, 74);
 	--color-accent: rgb(246, 166, 81);
 
 	--spacing-xs: 4px;
