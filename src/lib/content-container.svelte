@@ -8,6 +8,8 @@
 	.content-container {
 		padding-left: var(--spacing-sm);
 		padding-right: var(--spacing-sm);
+		max-width: 1000px;
+		margin: auto;
 	}
 
 	@include breakpoint-xs {
