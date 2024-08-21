@@ -3,24 +3,38 @@
 	import SectionTitle from './section-title.svelte';
 	import { sections } from './consts';
 
-	const { id, title, body } = sections.whatIsALS;
+	const { id, title, body } = sections.ourStory;
 </script>
 
 <section {id}>
 	<ContentContainer>
 		<SectionTitle>{title}</SectionTitle>
-		<div class="content">
-			{body}
-		</div>
+		<img src="images/our-story.jpg" alt="" />
+		<p>{body}</p>
 	</ContentContainer>
 </section>
 
-<style>
+<style lang="scss">
+	@import '../mixins.scss';
+
 	section {
 		padding: var(--spacing-xl) 0;
 	}
 
-	.content {
+	img {
+		width: 100%;
+	}
+
+	p {
+		padding: 0;
+		margin: var(--spacing-md) 0;
 		white-space: pre-wrap;
+	}
+
+	@include breakpoint-sm {
+		img {
+			float: right;
+			width: 300px;
+		}
 	}
 </style>

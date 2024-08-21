@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Footer from '$lib/footer.svelte';
 	import Hero from '$lib/hero.svelte';
-	import MyStory from '$lib/my-story.svelte';
+	import OurStory from '$lib/our-story.svelte';
 	import Nav from '$lib/nav.svelte';
 	import WhatIsALS from '$lib/what-is-als.svelte';
 	import WhyDonate from '$lib/why-donate.svelte';
@@ -11,7 +11,7 @@
 	<Hero />
 	<Nav />
 	<img class="banner" src="images/banner.jpg" alt="" />
-	<MyStory />
+	<OurStory />
 	<WhyDonate />
 	<WhatIsALS />
 	<Footer />

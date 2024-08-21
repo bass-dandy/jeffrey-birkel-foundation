@@ -29,12 +29,12 @@
 </script>
 
 <div class="share">
-	Share:
+	<div class="share-text">Share:</div>
 	<ul>
 		{#each linkConfig as { name, url, Icon }}
 			<li>
 				<a href={url} target="_blank" rel="noopener noreferrer">
-					<Icon fill="currentColor" height="1rem" />
+					<Icon fill="currentColor" height="1.2rem" />
 				</a>
 			</li>
 		{/each}
@@ -46,8 +46,18 @@
 
 	.share {
 		display: flex;
-		flex-direction: column;
-		padding: var(--spacing-sm) 0;
+		align-items: center;
+		gap: var(--spacing-sm);
+	}
+
+	.share-text {
+		display: none;
+	}
+
+	@include breakpoint-xs {
+		.share-text {
+			display: block;
+		}
 	}
 
 	a {
@@ -56,9 +66,10 @@
 		justify-content: center;
 		background: black;
 		border-radius: 50%;
-		height: var(--spacing-lg);
-		width: var(--spacing-lg);
+		height: 40px;
+		width: 40px;
 		color: var(--color-white);
+		transition: color 0.2s ease-out;
 	}
 
 	a:hover {
@@ -70,19 +81,13 @@
 		display: flex;
 		align-items: center;
 		gap: var(--spacing-xs);
-		margin: var(--spacing-sm) 0 0 0;
+		margin: 0;
 		padding: 0;
 	}
 
 	@include breakpoint-xs {
-		.share {
-			flex-direction: row;
-			align-items: center;
-			gap: var(--spacing-sm);
-		}
-
 		ul {
-			margin: 0;
+			gap: var(--spacing-sm);
 		}
 	}
 </style>

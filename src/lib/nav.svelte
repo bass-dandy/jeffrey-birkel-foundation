@@ -18,6 +18,8 @@
 		position: sticky;
 		top: 0;
 		width: 100%;
+		padding-top: var(--spacing-sm);
+		padding-bottom: var(--spacing-sm);
 		box-sizing: border-box;
 		background: white;
 		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
