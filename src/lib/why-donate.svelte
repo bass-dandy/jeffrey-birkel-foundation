@@ -19,7 +19,7 @@
 		color: var(--color-white);
 		background:
 			linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-			url('../images/why-donate.jpg') top center / cover no-repeat;
+			url('/images/why-donate.jpg') top center / cover no-repeat;
 	}
 
 	h2 {
