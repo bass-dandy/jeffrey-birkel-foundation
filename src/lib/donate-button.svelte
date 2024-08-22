@@ -1,6 +1,37 @@
-<button>
+<script lang="ts">
+	import { blur } from 'svelte/transition';
+	import smodale, { Modal } from 'smodale';
+	import DonateModal from './donate-modal.svelte';
+
+	const id = 'donate-modal';
+</script>
+
+<button on:click={() => smodale.show(id)}>
 	<span class="text">Donate</span>
 </button>
+
+<Modal
+	name={id}
+	transition={blur}
+	transitionParams={{ duration: 200 }}
+	breakpoints={{
+		'0px': {
+			maxWidth: '100%',
+			height: '100%',
+			padding: '0',
+			margin: '0'
+		},
+		'501px': {
+			centered: true,
+			maxWidth: '500px',
+			height: 'auto',
+			margin: '32px',
+			borderRadius: '10px'
+		}
+	}}
+>
+	<DonateModal />
+</Modal>
 
 <style lang="scss">
 	@import '../mixins.scss';
@@ -14,6 +45,7 @@
 		border-radius: 20px;
 		transition: --gradient 0.2s ease-out;
 		overflow: hidden;
+		cursor: pointer;
 
 		&:before {
 			content: '';
@@ -40,6 +72,8 @@
 			font-size: 1.2rem;
 			color: var(--color-white);
 			z-index: 1;
+			text-transform: uppercase;
+			font-weight: bold;
 		}
 	}
 

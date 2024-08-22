@@ -31,6 +31,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@poppanator/sveltekit-svg": "^4.2.1"
+		"@poppanator/sveltekit-svg": "^4.2.1",
+		"smodale": "^1.0.5"
 	}
 }
