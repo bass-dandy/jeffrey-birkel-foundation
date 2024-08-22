@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { getModalContext } from 'smodale';
 	import XMarkIcon from '$svg/xmark-solid.svg?component';
+	import PayLinks from './pay-links.svelte';
 
 	const { hide } = getModalContext();
 </script>
@@ -15,11 +16,7 @@
 
 	<div class="content">
 		Your support is greatly appreciated and 100% of your donation will go to the Foundation's mission. Thank you!
-		<ul class="buttons">
-			<button>PayPal</button>
-			<button>Venmo</button>
-			<button>Zelle</button>
-		</ul>
+		<PayLinks />
 		You can also send a payment through mail to:
 		<div class="address">
 			{'The Jeffrey F Birkel Foundation\n30090 E McCullough Rd\nBrady, Nebraska 69123'}
@@ -76,24 +73,6 @@
 	.title, .content {
 		padding-left: var(--spacing-sm);
 		padding-right: var(--spacing-sm);
-	}
-
-	.buttons {
-		list-style-type: none;
-		padding: 0;
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-		gap: var(--spacing-md);
-		justify-content: space-between;
-		align-items: center;
-
-		button {
-			width: 100%;
-			border: 0;
-			border-radius: 20px;
-			padding: var(--spacing-md);
-		}
 	}
 
 	.address {
