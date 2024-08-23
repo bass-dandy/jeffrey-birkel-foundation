@@ -10,7 +10,7 @@
 		size: '2rem'
 	}, {
 		title: 'Venmo',
-		href: 'https://account.venmo.com/pay?recipients=jfbfound',
+		href: 'https://venmo.com/jfbfound?txn=pay&note=donation',
 		bg: '#008cff',
 		Logo: VenmoLogo,
 		size: '1rem'
