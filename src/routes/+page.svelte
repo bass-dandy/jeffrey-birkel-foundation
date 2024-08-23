@@ -3,6 +3,7 @@
 	import Hero from '$lib/hero.svelte';
 	import OurStory from '$lib/our-story.svelte';
 	import Nav from '$lib/nav.svelte';
+	import ToEleven from '$lib/to-eleven.svelte';
 	import WhatIsALS from '$lib/what-is-als.svelte';
 	import WhyDonate from '$lib/why-donate.svelte';
 </script>
@@ -19,6 +20,7 @@
 		height="861"
 	/>
 	<OurStory />
+	<ToEleven />
 	<WhyDonate />
 	<WhatIsALS />
 	<Footer />
