@@ -33,7 +33,12 @@
 	<ul>
 		{#each linkConfig as { name, url, Icon }}
 			<li>
-				<a href={url} target="_blank" rel="noopener noreferrer">
+				<a
+					href={url}
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label={`share via ${name}`}
+				>
 					<Icon fill="currentColor" height="1.2rem" />
 				</a>
 			</li>

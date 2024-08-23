@@ -12,6 +12,8 @@
 		<img
 			src="images/our-story.jpg"
 			alt="Jeff crossing the finish line at the 2005 Boston Marathon. He's smiling but he was exhausted!"
+			width="735"
+			height="858"
 		/>
 		<p>{body}</p>
 	</ContentContainer>
@@ -26,6 +28,7 @@
 
 	img {
 		width: 100%;
+		height: auto;
 	}
 
 	p {
