@@ -19,7 +19,18 @@
 		color: var(--color-white);
 		background:
 			linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-			url('/images/why-donate.jpg') top center / cover no-repeat;
+			url('/images/why-donate.jpg');
+		background:
+			linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+			image-set(
+				url('/images/why-donate-1x.jpg') 1x,
+				url('/images/why-donate-2x.jpg') 2x,
+				url('/images/why-donate-3x.jpg') 3x,
+				url('/images/why-donate-4x.jpg') 4x
+			);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
 	}
 
 	h2 {

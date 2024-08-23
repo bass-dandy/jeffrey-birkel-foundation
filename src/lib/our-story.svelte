@@ -9,7 +9,10 @@
 <section {id}>
 	<ContentContainer>
 		<SectionTitle>{title}</SectionTitle>
-		<img src="images/our-story.jpg" alt="" />
+		<img
+			src="images/our-story.jpg"
+			alt="Jeff crossing the finish line at the 2005 Boston Marathon. He's smiling but he was exhausted!"
+		/>
 		<p>{body}</p>
 	</ContentContainer>
 </section>

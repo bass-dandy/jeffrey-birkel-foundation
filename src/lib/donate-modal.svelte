@@ -25,7 +25,11 @@
 
 	<div class="footer">
 		Sláinte!
-		<img src="images/donate.jpg" alt="" />
+		<img
+			src="images/donate-2x.jpg"
+			srcset="images/donate-1x.jpg 600w, images/donate-2x.jpg 800w, images/donate-3x.jpg 1000w, images/donate-4x.jpg 1296w"
+			alt="Jeff, the boys, and their wives Kalin and Sasha smiling and holding up some beers at the end of a race. Look like it was cloudy and wet outside but they still had a good time!"
+		/>
 	</div>
 </div>
 
