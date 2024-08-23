@@ -61,6 +61,7 @@
 		display: block;
 		min-width: 0px;
 		flex: 1;
+		border: 5px solid white;
 		box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 		z-index: 1;
 	}
@@ -84,11 +85,11 @@
 
 	@include breakpoint-xs {
 		.images {
-			gap: var(--spacing-lg);
+			gap: var(--spacing-md);
 		}
 
 		.images img:nth-child(2) {
-			flex: 1.3;
+			flex: 1.2;
 		}
 	}
 </style>
