@@ -4,6 +4,7 @@
 	import OurStory from '$lib/our-story.svelte';
 	import Nav from '$lib/nav.svelte';
 	import ToEleven from '$lib/to-eleven.svelte';
+	import WeNeedHelp from '$lib/we-need-help.svelte';
 	import WhatIsALS from '$lib/what-is-als.svelte';
 	import WhyDonate from '$lib/why-donate.svelte';
 </script>
@@ -20,8 +21,9 @@
 		height="861"
 	/>
 	<OurStory />
-	<ToEleven />
+	<WeNeedHelp />
 	<WhyDonate />
+	<ToEleven />
 	<WhatIsALS />
 	<Footer />
 </main>
@@ -32,6 +34,7 @@
 	}
 
 	.banner {
+		display: block;
 		width: 100%;
 		height: auto;
 	}
