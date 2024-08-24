@@ -10,7 +10,7 @@
 		<h1>Jeffrey F. Birkel Foundation</h1>
 		Donate to fund ALS research and help Jeff get to Boston!
 		<div class="funding">
-			${progress.toLocaleString()} raised of $20,000 goal
+			${progress.toLocaleString()} raised of $20,000 goal (updated daily)
 			<div class="progress">
 				<div
 					class="progress-fill"
