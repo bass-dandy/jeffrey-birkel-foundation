@@ -1,23 +1,27 @@
 @font-face {
-  font-family: 'economica';
-  src: url('/fonts/economica/Economica-Regular.ttf');
+	font-family: 'economica';
+	src: url('/fonts/economica/Economica-Regular.ttf');
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'economica';
-  src: url('/fonts/economica/Economica-Bold.ttf');
-  font-weight: bold;
+	font-family: 'economica';
+	src: url('/fonts/economica/Economica-Bold.ttf');
+	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'playfair';
 	src: url('/fonts/playfair-display/PlayfairDisplay-VariableFont_wght.ttf');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'playfair';
 	src: url('PlayfairDisplay-Italic-VariableFont_wght.ttf');
 	font-style: italic;
+	font-display: swap;
 }
 
 :root {
@@ -39,11 +43,11 @@ html, body {
 }
 
 * {
-	font-family: playfair;
+	font-family: playfair, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: economica;
+	font-family: economica, sans-serif;
 }
 
 h1 {
