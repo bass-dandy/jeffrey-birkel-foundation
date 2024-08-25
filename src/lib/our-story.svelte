@@ -12,19 +12,35 @@
 			</div>
 			<div class="images">
 				<picture>
-					<source media="(min-width:751px)" srcset="images/steamboat-2017.jpg">
+					<source
+						media="(min-width:751px)"
+						srcset="images/steamboat-2017-1x.jpg 500w, images/steamboat-2017-2x.jpg 1000w, images/steamboat-2017-3x.jpg 1500w, images/steamboat-2017-4x.jpg 1926w"
+						width="1926"
+						height="1926"
+					>
 					<img
-						src="images/steamboat-2017-wide.jpg"
+						src="images/steamboat-2017-wide-2x.jpg"
+						srcset="images/steamboat-2017-wide-1x.jpg 500w, images/steamboat-2017-wide-2x.jpg 1000w, images/steamboat-2017-wide-3x.jpg 1500w, images/steamboat-2017-wide-4x.jpg 2000w"
 						alt="Jeff, his daughter Katie, and her husband Chris smiling for a group selfie at the 2017 Steamboat Classic"
 						class="image-top"
+						width="2000"
+						height="1235"
 					/>
 				</picture>
 				<picture>
-					<source media="(min-width:751px)" srcset="images/vineyard.jpg">
+					<source
+						media="(min-width:751px)"
+						srcset="images/vineyard-1x.jpg 500w, images/vineyard-2x.jpg 1000w, images/vineyard-3x.jpg 1500w, images/vineyard-4x.jpg 1934w"
+						width="1934"
+						height="1934"
+					>
 					<img
-						src="images/vineyard-wide.jpg"
+						src="images/vineyard-wide-2x.jpg"
+						srcset="images/vineyard-wide-1x.jpg 500w, images/vineyard-wide-2x.jpg 1000w, images/vineyard-wide-3x.jpg 1500w, images/vineyard-wide-4x.jpg 2000w"
 						alt="Jeff and his wife Karla smiling for a selfie while working in their Nebraska vineyard"
 						class="image-bottom"
+						width="2000"
+						height="1235"
 					/>
 				</picture>
 			</div>
@@ -59,6 +75,7 @@
 			position: absolute;
 			border: 5px solid var(--color-white);
 			width: 55%;
+			height: auto;
 		}
 	}
 
