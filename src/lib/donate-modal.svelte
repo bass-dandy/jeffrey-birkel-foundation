@@ -21,6 +21,9 @@
 		<div class="address">
 			{'The Jeffrey F Birkel Foundation\n30090 E McCullough Rd\nBrady, Nebraska 69123'}
 		</div>
+		<span>
+			Email us at <a href="mailto:JFBFound@gmail.com">JFBFound@gmail.com</a> for donation receipts or any other inquiries.
+		</span>
 	</div>
 
 	<div class="footer">
