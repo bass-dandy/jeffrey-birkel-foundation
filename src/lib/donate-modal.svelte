@@ -14,27 +14,29 @@
 		</button>
 	</div>
 
-	<div class="content">
-		Your support is greatly appreciated and 100% of your donation will go to the Foundation's mission. Thank you!
-		<PayLinks />
-		You can also send a payment through mail to:
-		<div class="address">
-			{'The Jeffrey F Birkel Foundation\n30090 E McCullough Rd\nBrady, Nebraska 69123'}
+	<div class="scroll-area">
+		<div class="content">
+			Your support is greatly appreciated and 100% of your donation will go to the Foundation's mission. Thank you!
+			<PayLinks />
+			You can also send a payment through mail to:
+			<div class="address">
+				{'The Jeffrey F Birkel Foundation\n30090 E McCullough Rd\nBrady, Nebraska 69123'}
+			</div>
+			<span>
+				Email us at <a href="mailto:JFBFound@gmail.com">JFBFound@gmail.com</a> for donation receipts or any other inquiries.
+			</span>
 		</div>
-		<span>
-			Email us at <a href="mailto:JFBFound@gmail.com">JFBFound@gmail.com</a> for donation receipts or any other inquiries.
-		</span>
-	</div>
 
-	<div class="footer">
-		Sláinte!
-		<img
-			src="images/donate-2x.jpg"
-			srcset="images/donate-1x.jpg 600w, images/donate-2x.jpg 800w, images/donate-3x.jpg 1000w, images/donate-4x.jpg 1296w"
-			alt="Jeff, the boys, and their wives Kalin and Sasha smiling and holding up some beers at the end of a race. Look like it was cloudy and wet outside but they still had a good time!"
-			width="800"
-			height="450"
-		/>
+		<div class="footer">
+			Sláinte!
+			<img
+				src="images/donate-2x.jpg"
+				srcset="images/donate-1x.jpg 600w, images/donate-2x.jpg 800w, images/donate-3x.jpg 1000w, images/donate-4x.jpg 1296w"
+				alt="Jeff, the boys, and their wives Kalin and Sasha smiling and holding up some beers at the end of a race. Look like it was cloudy and wet outside but they still had a good time!"
+				width="800"
+				height="450"
+			/>
+		</div>
 	</div>
 </div>
 
@@ -44,9 +46,8 @@
 	.modal {
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing-md);
-		height: 100%;
-		overflow: auto;
+		height: 100vh;
+		overflow: hidden;
 	}
 
 	.title {
@@ -70,6 +71,14 @@
 		border: 0;
 		cursor: pointer;
 		color: white;
+	}
+
+	.scroll-area {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-md);
+		overflow-y: auto;
 	}
 
 	.content {
@@ -103,6 +112,7 @@
 	@include breakpoint-xs {
 		.modal {
 			height: auto;
+			max-height: 100vh;
 		}
 
 		.title, .content {
