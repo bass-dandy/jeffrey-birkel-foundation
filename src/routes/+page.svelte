@@ -9,8 +9,10 @@
 	import WhyDonate from '$lib/why-donate.svelte';
 </script>
 
-<main>
+<header>
 	<Hero />
+</header>
+<main>
 	<Nav />
 	<img
 		class="banner"
@@ -25,8 +27,10 @@
 	<WhyDonate />
 	<ToEleven />
 	<WhatIsALS />
-	<Footer />
 </main>
+<footer>
+	<Footer />
+</footer>
 
 <style>
 	main {

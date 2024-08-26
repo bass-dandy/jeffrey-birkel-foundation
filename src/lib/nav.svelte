@@ -4,15 +4,15 @@
 	import SocialShare from './social-share.svelte';
 </script>
 
-<div class="navbar">
+<nav>
 	<ContentContainer class="navbar-content">
 		<DonateButton />
 		<SocialShare />
 	</ContentContainer>
-</div>
+</nav>
 
 <style>
-	.navbar {
+	nav {
 		position: sticky;
 		top: 0;
 		width: 100%;

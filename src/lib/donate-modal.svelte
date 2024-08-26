@@ -86,6 +86,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-md);
+		padding-top: var(--spacing-md);
 	}
 
 	.title, .content {
