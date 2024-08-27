@@ -2,6 +2,7 @@
 	import Footer from '$lib/footer.svelte';
 	import Hero from '$lib/hero.svelte';
 	import OurStory from '$lib/our-story.svelte';
+	import Media from '$lib/media.svelte';
 	import Nav from '$lib/nav.svelte';
 	import ToEleven from '$lib/to-eleven.svelte';
 	import WeNeedHelp from '$lib/we-need-help.svelte';
@@ -26,6 +27,7 @@
 	<WeNeedHelp />
 	<WhyDonate />
 	<ToEleven />
+	<Media />
 	<WhatIsALS />
 </main>
 <footer>
