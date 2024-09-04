@@ -17,7 +17,7 @@
 	<div class="overlay">
 		<ContentContainer class="footer-content">
 			<div>
-				<div>501(c)(3) pending</div>
+				<div>Registered 501(c)(3)</div>
 				<div>EIN: 99-4432364</div>
 			</div>
 			Made with ❤️ by Jeff's family
