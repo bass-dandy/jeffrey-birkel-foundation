@@ -52,5 +52,6 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: var(--spacing-sm);
 	}
 </style>
