@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ContentContainer from './content-container.svelte';
 
-	const progress = 20241;
+	const progress = 29089;
 </script>
 
 <ContentContainer class="hero">
