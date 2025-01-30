@@ -36,7 +36,7 @@
 				(and 1 Rim-to-Rim)
 			</div>
 			<div class="body">
-				Help us turn it up to 11!
+				Time to turn it up to 11!
 			</div>
 		</ContentContainer>
 	</div>

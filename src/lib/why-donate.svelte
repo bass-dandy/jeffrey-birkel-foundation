@@ -6,7 +6,7 @@
 <section>
 	<ContentContainer>
 		<SectionTitle>Why donate?</SectionTitle>
-		Since all funds raised by the Jeffrey F. Birkel Foundation will eventually be donated to either ALS United or the ALS Association, you might be wondering: why not donate to those charities directly? Well, even though Matt and Mike have qualified for the Boston Marathon, we still need to apply for a separate pushchair entry. To get a charitable bib entry, we'll likely need to raise over $20,000 by November. Time is precious; though we've set our sights on Boston 2025, donating to the Jeffrey F. Birkel Foundation allows us to save up and try again in 2026 if we fail to get a bib this year. In addition, incorporating as a 501(c)(3) non-profit corporation ensures all your donations will be tax-exempt and meet the requirements of companies with matching gift programs.
+		In order to get a pushchair (“Duo Team”) entry, the Birkel family needed to go through the Boston Marathon’s charity program and fundraise a certain amount. We’re proud to announce that in December 2024, The ALS Association and the Boston Athletic Association granted entry bibs to all three for the 129th running of the Boston Marathon on April 21st, 2025! We’re also happy to report that in November, the Foundation achieved its original donation goal of $20,000 for the ALS Association, thus meeting their fundraising commitment! Many thanks to our generous donors! There’s no reason to stop there, though. We want to continue fundraising as much as we can, all the way up until the marathon finish line!
 	</ContentContainer>
 </section>
 

@@ -3,6 +3,7 @@
 	import Play from '$svg/play-solid.svg?component';
 
 	export let title: string;
+	export let date: string;
 	export let src: string;
 	export let href: string;
 	export let facade: string;
@@ -11,6 +12,10 @@
 </script>
 
 <h3>
+	{#if date}
+	<strong>{date} </strong>
+	{/if}
+
 	{#if href}
 	<a
 		href={href}

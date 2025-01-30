@@ -1,5 +1,6 @@
 <script lang="ts">
 	import FacebookIcon from '$svg/facebook-f-brands-solid.svg?component';
+	import BlueskyIcon from '$svg/bluesky-brands-solid.svg?component';
 	import TwitterIcon from '$svg/x-twitter-brands-solid.svg?component';
 	import LinkedInIcon from '$svg/linkedin-in-brands-solid.svg?component';
 	import EmailIcon from '$svg/envelope-solid.svg?component';
@@ -9,6 +10,11 @@
 			name: 'Facebook',
 			url: 'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjeffreybirkel.org',
 			Icon: FacebookIcon,
+		},
+		{
+			name: 'BlueSky',
+			url: 'https://bsky.app/intent/compose?text=https%3A%2F%2Fjeffreybirkel.org',
+			Icon: BlueskyIcon,
 		},
 		{
 			name: 'Twitter',
