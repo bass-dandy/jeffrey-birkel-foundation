@@ -20,7 +20,10 @@
 				<div>Registered 501(c)(3)</div>
 				<div>EIN: 99-4432364</div>
 			</div>
-			Made with ❤️ by Jeff's family
+			<div>
+				<div>Made with ❤️ by Jeff's family</div>
+				<div>email: <a href="mailto:jfbfound@gmail.com" target="__blank" rel="noopener noreferrer">jfbfound@gmail.com</a>
+			</div>
 		</ContentContainer>
 	</div>
 </div>
@@ -46,6 +49,15 @@
 		padding: var(--spacing-sm) 0;
 		box-sizing: border-box;
 		background: var(--color-black);
+	}
+
+	a {
+		color: var(--color-accent);
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
 	}
 
 	:global(.footer-content) {
