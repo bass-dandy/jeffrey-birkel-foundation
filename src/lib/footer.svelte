@@ -3,18 +3,20 @@
 </script>
 
 <div class="footer">
-	<img
-		src="images/footer-2x.jpg"
-		srcset="
-			images/footer-1x.jpg 1000w,
-			images/footer-2x.jpg 2000w,
-			images/footer-3x.jpg 3000w,
-			images/footer-4x.jpg 4000w
-		"
-		alt="Jeff's family posing for a selfie while eating burgers. From left to right, back to front: Chris, Karla, Katie, Jeff, Kalin, Christian, Mike, Sasha, and Matt"
-		loading="lazy"
-	/>
-	<div class="overlay">
+	<div class="image-wrapper">
+		<img
+			src="images/footer-2x.jpg"
+			srcset="
+				images/footer-1x.jpg 1000w,
+				images/footer-2x.jpg 2000w,
+				images/footer-3x.jpg 3000w,
+				images/footer-4x.jpg 4000w
+			"
+			alt="Jeff's family posing for a selfie while eating burgers. From left to right, back to front: Chris, Karla, Katie, Jeff, Kalin, Christian, Mike, Sasha, and Matt"
+			loading="lazy"
+		/>
+	</div>
+	<div class="content">
 		<ContentContainer class="footer-content">
 			<div>
 				<div>Registered 501(c)(3)</div>
@@ -31,24 +33,38 @@
 <style>
 	.footer {
 		position: relative;
+	}
+
+	.image-wrapper {
+		position: relative;
+	}
+
+	.image-wrapper::before {
+		content: '';
+		display: block;
 		background: var(--color-black);
-		color: var(--color-white);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 25%;
 	}
 
 	img {
+		position: relative;
 		display: block;
 		width: 100%;
+		max-width: 1000px;
 		height: auto;
+		margin: auto;
 	}
 
-	.overlay {
-		position: sticky;
-		bottom: 0;
-		left: 0;
+	.content {
 		width: 100%;
-		padding: var(--spacing-sm) 0;
+		padding: var(--spacing-md) 0;
 		box-sizing: border-box;
 		background: var(--color-black);
+		color: var(--color-white);
 	}
 
 	a {
