@@ -31,6 +31,7 @@
 	.social {
 		display: flex;
 		align-items: center;
+		gap: var(--spacing-sm);
 	}
 
 	:global(.navbar-content) {
