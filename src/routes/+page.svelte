@@ -8,6 +8,7 @@
 	import OurMission from '$lib/our-mission.svelte';
 	import WhatIsALS from '$lib/what-is-als.svelte';
 	import WhyDonate from '$lib/why-donate.svelte';
+	import Updates from '$lib/updates.svelte';
 </script>
 
 <header>
@@ -27,6 +28,7 @@
 	<OurMission />
 	<WhyDonate />
 	<ToEleven />
+	<Updates />
 	<Media />
 	<WhatIsALS />
 </main>
