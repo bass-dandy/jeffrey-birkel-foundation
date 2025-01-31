@@ -32,6 +32,7 @@
 	"type": "module",
 	"dependencies": {
 		"@poppanator/sveltekit-svg": "^4.2.1",
-		"smodale": "^1.0.5"
+		"smodale": "^1.0.5",
+		"svelte-headlessui": "^0.0.46"
 	}
 }

@@ -1,45 +1,38 @@
 <script lang="ts">
 	import Dropdown from './dropdown.svelte';
 	import FacebookIcon from '$svg/facebook-f-brands-solid.svg?component';
-	import BlueskyIcon from '$svg/bluesky-brands-solid.svg?component';
-	import TwitterIcon from '$svg/x-twitter-brands-solid.svg?component';
-	import LinkedInIcon from '$svg/linkedin-in-brands-solid.svg?component';
-	import EmailIcon from '$svg/envelope-solid.svg?component';
-	import ShareIcon from '$svg/share-nodes-solid.svg?component';
+	import InstagramIcon from '$svg/instagram-brands-solid.svg?component';
+	import StravaIcon from '$svg/strava-brands-solid.svg?component';
+	import FollowIcon from '$svg/user-plus-solid.svg?component';
 
 	const linkConfig = [
 		{
 			name: 'Facebook',
-			url: 'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjeffreybirkel.org',
+			url: 'https://www.facebook.com/jfbfound',
 			Icon: FacebookIcon,
 		},
 		{
-			name: 'Bluesky',
-			url: 'https://bsky.app/intent/compose?text=https%3A%2F%2Fjeffreybirkel.org',
-			Icon: BlueskyIcon,
+			name: 'Instagram',
+			url :'https://www.instagram.com/jfbfound/',
+			Icon: InstagramIcon,
 		},
 		{
-			name: 'Twitter',
-			url: 'https://twitter.com/intent/tweet?url=https%3A%2F%2Fjeffreybirkel.org',
-			Icon: TwitterIcon,
+			name: 'Strava (Matt)',
+			url: 'https://www.strava.com/athletes/18893869',
+			Icon: StravaIcon,
 		},
 		{
-			name: 'LinkedIn',
-			url: 'https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fjeffreybirkel.org',
-			Icon: LinkedInIcon,
-		},
-		{
-			name: 'Email',
-			url: 'mailto:?subject=Donate%20to%20ALS%20research%20and%20help%20Jeff%20get%20to%20Boston&body=https%3A%2F%2Fjeffreybirkel.org',
-			Icon: EmailIcon,
+			name: 'Strava (Mike)',
+			url: 'https://www.strava.com/athletes/26909400',
+			Icon: StravaIcon,
 		},
 	];
 </script>
 
 <Dropdown>
 	<div slot="button" class="share-button">
-		<ShareIcon fill="currentColor" height="1.2rem" />
-		Share
+		<FollowIcon fill="currentColor" height="1.2rem" />
+		Follow us!
 	</div>
 
 	<ul slot="panel">
@@ -75,6 +68,7 @@
 		flex-direction: column;
 		margin: 0;
 		padding: var(--spacing-xs);
+		width: 220px;
 	}
 
 	.social-icon {

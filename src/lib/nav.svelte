@@ -1,13 +1,17 @@
 <script lang="ts">
 	import ContentContainer from './content-container.svelte';
 	import DonateButton from './donate-button.svelte';
+	import SocialFollow from './social-follow.svelte';
 	import SocialShare from './social-share.svelte';
 </script>
 
 <nav>
 	<ContentContainer class="navbar-content">
 		<DonateButton />
-		<SocialShare />
+		<div class="social">
+			<SocialFollow />
+			<SocialShare />
+		</div>
 	</ContentContainer>
 </nav>
 
@@ -22,6 +26,11 @@
 		box-sizing: border-box;
 		background: white;
 		z-index: 1000;
+	}
+
+	.social {
+		display: flex;
+		align-items: center;
 	}
 
 	:global(.navbar-content) {

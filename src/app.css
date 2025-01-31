@@ -14,6 +14,7 @@
 :root {
 	--color-white: #fff;
 	--color-black: #000;
+	--color-gray: rgb(230, 230, 230);
 	--color-secondary: rgb(203, 109, 74);
 	--color-accent: rgb(246, 166, 81);
 
