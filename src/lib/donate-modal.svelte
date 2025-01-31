@@ -18,7 +18,9 @@
 		<div class="content">
 			Your support is greatly appreciated and 100% of your donation will go to the Foundation's mission. Thank you!
 			<PayLinks />
-			You can also send a payment through mail to:
+			<span>
+				You can also contribute to our <a href="https://www.givengain.com/donate/ap/89890#amount" target="__blank" rel="noopener noreferrer">GivenGain campaign</a> or send a payment through mail to:
+			</span>
 			<div class="address">
 				{'The Jeffrey F Birkel Foundation\n30090 E McCullough Rd\nBrady, Nebraska 69123'}
 			</div>
