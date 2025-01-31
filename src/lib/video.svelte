@@ -11,50 +11,51 @@
 	let isMounted = false;
 </script>
 
-<h3>
+<div>
 	{#if date}
-	<strong>{date} </strong>
+		<strong>{date} </strong>
 	{/if}
-
-	{#if href}
-	<a
-		href={href}
-		target="_blank"
-		rel="noopener noreferrer"
-	>
-		{title}
-		<ArrowUpRightFromSquare
-			fill="currentColor"
-			height="1rem"
-			style="margin-left: var(--spacing-xs); position: relative; top: 2px;"
-		/>
-	</a>
-	{:else}
-		{title}
-	{/if}
-</h3>
-<div class="video">
-	{#if !facade || isMounted}
-		<iframe
-			width="560"
-			height="315"
-			src={`${src}${facade ? '&autoplay=1' : ''}`}
-			title="YouTube video player"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			referrerpolicy="strict-origin-when-cross-origin"
-			allowfullscreen
-		/>
-	{:else}
-		<img src={facade} alt="" loading="lazy" />
-		<button on:click={() => isMounted = true}>
-			<Play
-				fill="currentColor"
-				height="4rem"
-				aria-label="play video"
+	<div class="video">
+		{#if !facade || isMounted}
+			<iframe
+				width="560"
+				height="315"
+				src={`${src}${facade ? '&autoplay=1' : ''}`}
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
 			/>
-		</button>
-	{/if}
+		{:else}
+			<img src={facade} alt="" loading="lazy" />
+			<button on:click={() => isMounted = true}>
+				<Play
+					fill="currentColor"
+					height="4rem"
+					aria-label="play video"
+				/>
+			</button>
+		{/if}
+	</div>
+	<h3>
+		{#if href}
+		<a
+			href={href}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			{title}
+			<ArrowUpRightFromSquare
+				fill="currentColor"
+				height="1rem"
+				style="margin-left: var(--spacing-xs); position: relative; top: 2px;"
+			/>
+		</a>
+		{:else}
+			{title}
+		{/if}
+	</h3>
 </div>
 
 <style>

@@ -54,7 +54,7 @@
 		position: relative;
 		display: block;
 		width: 100%;
-		max-width: 1000px;
+		max-width: var(--max-page-width);
 		height: auto;
 		margin: auto;
 	}

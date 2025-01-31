@@ -8,7 +8,7 @@
 	.content-container {
 		padding-left: var(--spacing-sm);
 		padding-right: var(--spacing-sm);
-		max-width: 1000px;
+		max-width: var(--max-page-width);
 		margin: auto;
 	}
 

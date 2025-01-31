@@ -23,6 +23,8 @@
 	--spacing-md: 16px;
 	--spacing-lg: 32px;
 	--spacing-xl: 64px;
+
+	--max-page-width: 1000px;
 }
 
 html, body {
