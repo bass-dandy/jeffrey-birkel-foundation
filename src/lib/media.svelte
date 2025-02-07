@@ -10,6 +10,18 @@
 		<ul>
 			<li>
 				<Video
+					title="Father diagnosed with ALS and son prepare for Boston Marathon"
+					date="1/31/24"
+					src="https://www.youtube.com/embed/XwTIfXI4yxU?si=Bw5agKvTf-vembno"
+					facade="images/kttc-facade.png"
+					link={{
+						href: 'https://www.kttc.com/2025/02/01/father-diagnosed-with-als-son-prepare-boston-marathon/',
+						text: 'full story on KTTC',
+					}}
+				/>
+			</li>
+			<li>
+				<Video
 					title="Pushing Forward: Jeff Birkel’s Fight and Marathon Mission"
 					date="9/17/24"
 					src="https://www.youtube.com/embed/Yxu-3mQ_XK8?si=qFnw7hY5dV9Y1f_q"
@@ -18,11 +30,14 @@
 			</li>
 			<li>
 				<Video
-					title="Man with ALS looks to qualify for Boston Marathon with two sons (KNOP)"
+					title="Man with ALS looks to qualify for Boston Marathon with two sons"
 					date="8/23/24"
 					src="https://www.youtube.com/embed/oWJOKq-2vmQ?si=C6WW1rcrNUq80v-I"
-					href="https://www.knopnews2.com/2024/08/23/man-with-als-looks-qualify-boston-marathon-with-two-sons/"
 					facade="images/knop-facade.jpg"
+					link={{
+						href: 'https://www.knopnews2.com/2024/08/23/man-with-als-looks-qualify-boston-marathon-with-two-sons/',
+						text: 'full story on KNOP',
+					}}
 				/>
 			</li>
 		</ul>

@@ -16,14 +16,15 @@
 
 	<div class="scroll-area">
 		<div class="content">
-			Your support is greatly appreciated and 100% of your donation will go to the Foundation's mission. Thank you!
-			<PayLinks />
 			<span>
-				You can also contribute to our <a href="https://www.givengain.com/donate/ap/89890#amount" target="__blank" rel="noopener noreferrer">GivenGain campaign</a> or send a payment through mail to:
+				The ALS Association has set us up with a <a href="https://www.givengain.com/donate/ap/89890#amount" target="__blank" rel="noopener noreferrer">GivenGain campaign</a> for further fundraising! If you would would prefer to contribute to the Jeffrey Birkel Foundation directly, we gladly accept PayPal or Venmo:
 			</span>
+			<PayLinks />
+			you can also send a payment through mail to:
 			<div class="address">
 				{'The Jeffrey F Birkel Foundation\n30090 E McCullough Rd\nBrady, Nebraska 69123'}
 			</div>
+			Your support is greatly appreciated and 100% of your donation will go to the Foundation's mission. Thank you!
 			<span>
 				Email us at <a href="mailto:JFBFound@gmail.com">JFBFound@gmail.com</a> for donation receipts or any other inquiries.
 			</span>

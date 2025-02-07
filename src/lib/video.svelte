@@ -5,16 +5,35 @@
 	export let title: string;
 	export let date: string;
 	export let src: string;
-	export let href: string;
 	export let facade: string;
+	export let link: {
+		href: string;
+		text: string;
+	} = null;
 
 	let isMounted = false;
 </script>
 
 <div>
-	{#if date}
-		<strong>{date} </strong>
-	{/if}
+	<div class="headline">
+		{#if date}
+			{date}
+		{/if}
+		{#if link}
+			<a
+				href={link.href}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				{link.text}
+				<ArrowUpRightFromSquare
+					fill="currentColor"
+					height="1rem"
+					style="margin-left: var(--spacing-xs); position: relative; top: 2px;"
+				/>
+			</a>
+		{/if}
+	</div>
 	<div class="video">
 		{#if !facade || isMounted}
 			<iframe
@@ -39,30 +58,21 @@
 		{/if}
 	</div>
 	<h3>
-		{#if href}
-		<a
-			href={href}
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			{title}
-			<ArrowUpRightFromSquare
-				fill="currentColor"
-				height="1rem"
-				style="margin-left: var(--spacing-xs); position: relative; top: 2px;"
-			/>
-		</a>
-		{:else}
-			{title}
-		{/if}
+		{title}
 	</h3>
 </div>
 
 <style>
+	.headline {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
 	h3 {
 		margin: 0 0 var(--spacing-xs) 0;
 		font-size: 1.125rem;
-		font-weight: normal;
+		font-weight: bold;
 	}
 
 	a:hover {
