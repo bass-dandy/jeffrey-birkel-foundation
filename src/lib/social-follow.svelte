@@ -2,6 +2,7 @@
 	import Dropdown from './dropdown.svelte';
 	import FacebookIcon from '$svg/facebook-f-brands-solid.svg?component';
 	import InstagramIcon from '$svg/instagram-brands-solid.svg?component';
+	import YouTubeIcon from '$svg/youtube-brands-solid.svg?component';
 	import StravaIcon from '$svg/strava-brands-solid.svg?component';
 	import FollowIcon from '$svg/user-plus-solid.svg?component';
 
@@ -15,6 +16,11 @@
 			name: 'Instagram',
 			url :'https://www.instagram.com/jfbfound/',
 			Icon: InstagramIcon,
+		},
+		{
+			name: 'YouTube',
+			url :'https://www.youtube.com/@jfbfound',
+			Icon: YouTubeIcon,
 		},
 		{
 			name: 'Strava (Matt)',
