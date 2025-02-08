@@ -28,15 +28,16 @@
 
 	button {
 		padding: var(--spacing-xs) var(--spacing-md);
-		border: 1px solid var(--color-secondary);
-		color: var(--color-secondary);
+		color: var(--color-white);
+		border: 1px solid var(--color-white);
 		border-radius: 5px;
-		background: transparent;
 		cursor: pointer;
 		font-size: 1rem;
+		background: rgba(0, 0, 0, 0);
+		height: 100%;
 
 		&:hover {
-			background: var(--color-gray);
+			background: rgba(0, 0, 0, 0.05);
 		}
 	}
 

@@ -124,6 +124,6 @@
 	}
 
 	.toggle button:hover {
-		background: var(--color-gray);
+		background: var(--color-darken);
 	}
 </style>

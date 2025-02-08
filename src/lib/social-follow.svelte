@@ -31,7 +31,9 @@
 
 <Dropdown>
 	<div slot="button" class="share-button">
-		<FollowIcon fill="currentColor" height="1.2rem" />
+		<div class="button-icon">
+			<FollowIcon fill="currentColor" height="1.2rem" />
+		</div>
 		Follow us!
 	</div>
 
@@ -60,6 +62,17 @@
 		display: flex;
 		align-items: center;
 		gap: var(--spacing-sm);
+	}
+
+	.button-icon {
+		display: none;
+	}
+
+	@include breakpoint-xs {
+		.button-icon {
+			display: flex;
+			align-items: center
+		}
 	}
 
 	ul {
@@ -95,7 +108,7 @@
 		border-radius: 5px;
 
 		&:hover, &:focus {
-			background: var(--color-gray);
+			background: var(--color-darken);
 
 			.social-icon {
 				color: var(--color-accent);

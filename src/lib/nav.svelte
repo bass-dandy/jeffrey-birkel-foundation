@@ -22,21 +22,19 @@
 		width: 100%;
 		padding-top: var(--spacing-sm);
 		padding-bottom: var(--spacing-sm);
-		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 		box-sizing: border-box;
-		background: white;
+		background: var(--color-secondary);
 		z-index: 1000;
 	}
 
 	.social {
 		display: flex;
-		align-items: center;
 		gap: var(--spacing-sm);
 	}
 
 	:global(.navbar-content) {
 		display: flex;
-		align-items: center;
+		align-items: stretch;
 		gap: var(--spacing-md);
 		justify-content: space-between;
 	}
