@@ -25,7 +25,13 @@
 	</ContentContainer>
 	<img
 		class="banner"
-		src="images/banner.png"
+		src="images/banner-2x.webp"
+		srcset="
+			images/banner-1x.webp 400w,
+			images/banner-2x.webp 800w,
+			images/banner-3x.webp 1200w,
+			images/banner-4x.webp 1606w
+		"
 		alt="Matt, Mike, and Jeff after successfully qualifying for the Boston Marathon. Jeff is in his racing wheelchair surrounded by family."
 		width="1606"
 		height="677"
