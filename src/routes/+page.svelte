@@ -9,6 +9,7 @@
 	import WhatIsALS from '$lib/what-is-als.svelte';
 	import WhyDonate from '$lib/why-donate.svelte';
 	import Updates from '$lib/updates.svelte';
+	import SocialMedia from '$lib/social-media.svelte';
 </script>
 
 <header>
@@ -21,6 +22,7 @@
 	<WhyDonate />
 	<ToEleven />
 	<Updates />
+	<SocialMedia />
 	<Media />
 	<WhatIsALS />
 </main>
