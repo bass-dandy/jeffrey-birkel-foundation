@@ -26,6 +26,9 @@
 						alt="instagram post by jfbfound"
 						loading="lazy"
 					/>
+					<div class="caption">
+						{post.caption}
+					</div>
 					<div class="media-type">
 						{#if post.media_type === 'IMAGE'}
 							<ImageIcon fill="currentColor" height="1.75rem" />
@@ -72,6 +75,42 @@
 		}
 	}
 
+	.caption {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		transition: opacity 0.1s ease-out;
+		white-space: pre-wrap;
+		padding: var(--spacing-xs);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-size: 0.9rem;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 25%;
+			background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+			z-index: 1;
+		}
+	}
+
+	.media-type {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		opacity: 1;
+		transition: opacity 0.1s ease-out;
+	}
+
 	.post {
 		position: relative;
 		display: flex;
@@ -81,19 +120,21 @@
 		color: var(--color-white);
 		transition: transform 0.1s ease-out;
 
-		&:hover {
+		&:hover, &:focus {
 			transform: scale(1.02);
+
+			.caption {
+				opacity: 1;
+			}
+
+			.media-type {
+				opacity: 0;
+			}
 		}
 	}
 
 	img {
 		width: 100%;
-	}
-
-	.media-type {
-		position: absolute;
-		top: 10px;
-		right: 10px;
 	}
 
 	.toggle {
