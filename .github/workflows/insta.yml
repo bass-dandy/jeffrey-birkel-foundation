@@ -14,10 +14,18 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
 
-      - name: Update insta.json
-        run: curl -s -X GET "https://graph.facebook.com/v22.0/17841472361745279/media?fields=caption%2Clike_count%2Cmedia_url%2Cmedia_type%2Cthumbnail_url%2Ctimestamp%2Cpermalink%2Cchildren%7Bmedia_url%7D&access_token=${{ secrets.INSTAGRAM_ACCESS_TOKEN }}" > src/insta.json
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
 
-      - name: Commit changes
+      - name: Update insta.json
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: node scripts/fetch-insta.js
+
+      - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update insta.json
