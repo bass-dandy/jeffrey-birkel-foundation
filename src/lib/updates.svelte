@@ -1,8 +1,7 @@
 <script lang="ts">
+	import CollapseList from './collapse-list.svelte';
 	import ContentContainer from './content-container.svelte';
 	import SectionTitle from './section-title.svelte';
-	import ChevronUpIcon from '$svg/chevron-up-solid.svg?component';
-	import ChevronDownIcon from '$svg/chevron-down-solid.svg?component';
 
 	const FOLD_IDX = 3;
 
@@ -50,49 +49,20 @@
 	<ContentContainer class="updates-content">
 		<SectionTitle>Updates</SectionTitle>
 		Training and fundraising have continued in earnest. You can follow Matt and Mike’s training journey on the Strava links provided at the top of the webpage. You can also follow us on social media.
-		<ul class={isExpanded ? '' : 'collapsed'}>
+		<CollapseList showFade bind:isExpanded={isExpanded}>
 			{#each visibleUpdates as { date, body } (date)}
 				<li>
 					<h3>{date}</h3>
 					<p>{body}</p>
 				</li>
 			{/each}
-		</ul>
-		<div class="toggle">
-			<button on:click={() => isExpanded = !isExpanded}>
-				{isExpanded ? 'Show less' : 'Show more'}
-				{#if isExpanded}
-					<ChevronUpIcon fill="currentColor" height="0.75rem"/>
-				{:else}
-					<ChevronDownIcon fill="currentColor" height="0.75rem"/>
-				{/if}
-			</button>
-		</div>
+		</CollapseList>
 	</ContentContainer>
 </section>
 
 <style>
 	section {
 		padding: var(--spacing-xl) 0 0;
-	}
-
-	ul {
-		position: relative;
-		list-style-type: none;
-		padding: 0;
-		margin: 0;
-		transition: height 0.5s;
-	}
-
-	ul.collapsed::after {
-		content: '';
-		display: block;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100px;
-		background: linear-gradient(transparent, var(--color-white));
 	}
 
 	h3 {
@@ -102,28 +72,5 @@
 	p {
 		margin: 0;
 		padding: 0;
-	}
-
-	.toggle {
-		display: flex;
-		justify-content: center;
-		margin-top: var(--spacing-md);
-	}
-
-	.toggle button {
-		display: flex;
-		align-items: center;
-		gap: var(--spacing-sm);
-		background: transparent;
-		border: 0;
-		border-radius: 5px;
-		color: var(--color-secondary);
-		cursor: pointer;
-		font-size: 1rem;
-		padding: var(--spacing-sm) var(--spacing-lg);
-	}
-
-	.toggle button:hover {
-		background: var(--color-darken);
 	}
 </style>

@@ -2,9 +2,8 @@
 	import ImageIcon from '$svg/image-solid.svg?component';
 	import ImagesIcon from '$svg/images-solid.svg?component';
 	import FilmIcon from '$svg/film-solid.svg?component';
-	import ChevronUpIcon from '$svg/chevron-up-solid.svg?component';
-	import ChevronDownIcon from '$svg/chevron-down-solid.svg?component';
 
+	import CollapseList from './collapse-list.svelte';
 	import ContentContainer from './content-container.svelte';
 	import SectionTitle from './section-title.svelte';
 	import res from '../insta.json';
@@ -18,7 +17,7 @@
 <section>
 	<ContentContainer>
 		<SectionTitle>Social Media</SectionTitle>
-		<div class="content">
+		<CollapseList bind:isExpanded={isExpanded} variant="grid">
 			{#each visiblePosts as post (post.id)}
 				<a class="post" href={post.permalink} target="__blank" rel="noopener noreferrer">
 					<img
@@ -40,17 +39,7 @@
 					</div>
 				</a>
 			{/each}
-		</div>
-		<div class="toggle">
-			<button on:click={() => isExpanded = !isExpanded}>
-				{isExpanded ? 'Show less' : 'Show more'}
-				{#if isExpanded}
-					<ChevronUpIcon fill="currentColor" height="0.75rem"/>
-				{:else}
-					<ChevronDownIcon fill="currentColor" height="0.75rem"/>
-				{/if}
-			</button>
-		</div>
+		</CollapseList>
 	</ContentContainer>
 </section>
 
@@ -59,20 +48,6 @@
 
 	section {
 		padding: var(--spacing-xl) 0 0;
-	}
-
-	.content {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		width: 100%;
-		padding-top: var(--spacing-lg);
-		gap: var(--spacing-sm);
-	}
-
-	@include breakpoint-xs {
-		.content {
-			grid-template-columns: 1fr 1fr 1fr;
-		}
 	}
 
 	.caption {
@@ -135,28 +110,5 @@
 
 	img {
 		width: 100%;
-	}
-
-	.toggle {
-		display: flex;
-		justify-content: center;
-		margin-top: var(--spacing-md);
-	}
-
-	.toggle button {
-		display: flex;
-		align-items: center;
-		gap: var(--spacing-sm);
-		background: transparent;
-		border: 0;
-		border-radius: 5px;
-		color: var(--color-secondary);
-		cursor: pointer;
-		font-size: 1rem;
-		padding: var(--spacing-sm) var(--spacing-lg);
-	}
-
-	.toggle button:hover {
-		background: var(--color-darken);
 	}
 </style>
