@@ -3,7 +3,7 @@
 	import ImagesIcon from '$svg/images-solid.svg?component';
 	import FilmIcon from '$svg/film-solid.svg?component';
 
-	import CollapseList from './collapse-list.svelte';
+	import Collapse from './collapse.svelte';
 	import ContentContainer from './content-container.svelte';
 	import SectionTitle from './section-title.svelte';
 	import res from '../insta.json';
@@ -17,29 +17,31 @@
 <section>
 	<ContentContainer>
 		<SectionTitle>Social Media</SectionTitle>
-		<CollapseList bind:isExpanded={isExpanded} variant="grid">
-			{#each visiblePosts as post (post.id)}
-				<a class="post" href={post.permalink} target="__blank" rel="noopener noreferrer">
-					<img
-						src={post.thumbnail_url || post.media_url}
-						alt="instagram post by jfbfound"
-						loading="lazy"
-					/>
-					<div class="caption">
-						{post.caption}
-					</div>
-					<div class="media-type">
-						{#if post.media_type === 'IMAGE'}
-							<ImageIcon fill="currentColor" height="1.75rem" />
-						{:else if post.media_type === 'CAROUSEL_ALBUM'}
-							<ImagesIcon fill="currentColor" height="1.75rem" />
-						{:else if post.media_type === 'VIDEO'}
-							<FilmIcon fill="currentColor" height="1.75rem" />
-						{/if}
-					</div>
-				</a>
-			{/each}
-		</CollapseList>
+		<Collapse bind:isExpanded={isExpanded}>
+			<ul>
+				{#each visiblePosts as post (post.id)}
+					<a class="post" href={post.permalink} target="__blank" rel="noopener noreferrer">
+						<img
+							src={post.thumbnail_url || post.media_url}
+							alt="instagram post by jfbfound"
+							loading="lazy"
+						/>
+						<div class="caption">
+							{post.caption}
+						</div>
+						<div class="media-type">
+							{#if post.media_type === 'IMAGE'}
+								<ImageIcon fill="currentColor" height="1.75rem" />
+							{:else if post.media_type === 'CAROUSEL_ALBUM'}
+								<ImagesIcon fill="currentColor" height="1.75rem" />
+							{:else if post.media_type === 'VIDEO'}
+								<FilmIcon fill="currentColor" height="1.75rem" />
+							{/if}
+						</div>
+					</a>
+				{/each}
+			</ul>
+		</Collapse>
 	</ContentContainer>
 </section>
 
@@ -48,6 +50,21 @@
 
 	section {
 		padding: var(--spacing-xl) 0 0;
+	}
+
+	ul {
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--spacing-sm);
+		padding: 0;
+		margin: 0;
+	}
+
+	@include breakpoint-xs {
+		ul {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
 	}
 
 	.caption {

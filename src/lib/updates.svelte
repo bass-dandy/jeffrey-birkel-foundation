@@ -1,5 +1,5 @@
 <script lang="ts">
-	import CollapseList from './collapse-list.svelte';
+	import Collapse from './collapse.svelte';
 	import ContentContainer from './content-container.svelte';
 	import SectionTitle from './section-title.svelte';
 
@@ -49,14 +49,16 @@
 	<ContentContainer class="updates-content">
 		<SectionTitle>Updates</SectionTitle>
 		Training and fundraising have continued in earnest. You can follow Matt and Mike’s training journey on the Strava links provided at the top of the webpage. You can also follow us on social media.
-		<CollapseList showFade bind:isExpanded={isExpanded}>
-			{#each visibleUpdates as { date, body } (date)}
-				<li>
-					<h3>{date}</h3>
-					<p>{body}</p>
-				</li>
-			{/each}
-		</CollapseList>
+		<Collapse bind:isExpanded={isExpanded} showFade>
+			<ul>
+				{#each visibleUpdates as { date, body } (date)}
+					<li>
+						<h3>{date}</h3>
+						<p>{body}</p>
+					</li>
+				{/each}
+			</ul>
+		</Collapse>
 	</ContentContainer>
 </section>
 
@@ -72,5 +74,11 @@
 	p {
 		margin: 0;
 		padding: 0;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
 	}
 </style>
