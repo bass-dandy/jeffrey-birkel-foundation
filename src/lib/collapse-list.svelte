@@ -71,7 +71,7 @@
 			align-items: center;
 			gap: var(--spacing-sm);
 			background: transparent;
-			border: 0;
+			border: 1px solid var(--color-secondary);
 			border-radius: 5px;
 			color: var(--color-secondary);
 			cursor: pointer;
