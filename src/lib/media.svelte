@@ -10,8 +10,20 @@
 		<ul>
 			<li>
 				<Video
+					title="How a Minnesota son is helping his father run the Boston Marathon"
+					date="3/16/25"
+					src="https://www.youtube.com/embed/HHkp_w9TJ-o?si=fWlkyHywHJMDzoAo"
+					facade="images/cbs-facade.png"
+					link={{
+						href: 'https://www.cbsnews.com/minnesota/video/how-a-minnesota-son-is-helping-his-father-run-the-boston-marathon/',
+						text: 'full story on CBS',
+					}}
+				/>
+			</li>
+			<li>
+				<Video
 					title="Father diagnosed with ALS and son prepare for Boston Marathon"
-					date="1/31/24"
+					date="1/31/25"
 					src="https://www.youtube.com/embed/XwTIfXI4yxU?si=Bw5agKvTf-vembno"
 					facade="images/kttc-facade.png"
 					link={{
