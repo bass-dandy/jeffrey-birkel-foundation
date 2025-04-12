@@ -57,9 +57,9 @@
 			</button>
 		{/if}
 	</div>
-	<h3>
-		{title}
-	</h3>
+	{#if title}
+		<h3>{title}</h3>
+	{/if}
 </div>
 
 <style>
