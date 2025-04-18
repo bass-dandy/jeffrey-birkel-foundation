@@ -25,7 +25,7 @@
 		</div>
 	</ContentContainer>
 	<div class="banner">
-		<Video src="https://www.youtube.com/embed/c6r3Tb8QUlQ?si=1dDv011rmHJgnpvY&autoplay=1&mute=1" />
+		<Video src="https://www.youtube.com/embed/dSs4aWllVys?si=SljmjHdiK4AeG8ns&autoplay=1&mute=1" />
 	</div>
 </div>
 
