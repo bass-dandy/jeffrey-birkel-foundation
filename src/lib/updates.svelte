@@ -3,9 +3,33 @@
 	import ContentContainer from './content-container.svelte';
 	import SectionTitle from './section-title.svelte';
 
-	const FOLD_IDX = 3;
+	const FOLD_IDX = 4;
 
 	const updates = [
+		{
+			date: '4/8/25',
+			body: 'The Boston Athletic Association awarded us two finish line tickets for having raised more than $25K by April 1st.',
+		},
+		{
+			date: '3/31/25',
+			body: 'Matt and Mike finished their final long run in the training block. Now let the taper begin!',
+		},
+		{
+			date: '3/20/25',
+			body: 'Today was Online Giving Day for the Bank of America Boston Marathon. The JFB Foundation sent $20,600 from our fundraising into our official Boston Marathon charity account, which was enough to win 2nd place overall and a $6,000 matching donation from Bank of America!',
+		},
+		{
+			date: '3/16/25',
+			body: 'WCCO CBS Minneapolis aired an 8+ minute story on us, and Mike was a live guest on their Sunday Morning news show!',
+		},
+		{
+			date: '2/2/25',
+			body: 'We did a videoshoot for the Minneapolis CBS TV station WCCO for their Sunday morning news segment to be aired at a later date.',
+		},
+		{
+			date: '1/31/25',
+			body: 'KTTC Rochester TV filmed and aired our story on the 10pm news. It was also picked up by the NBC early morning national news!',
+		},
 		{
 			date: '1/29/25',
 			body: 'With a lot of help from the ALS Association’s communication team, there are two scheduled TV interviews and more in the works. Stay tuned!',
@@ -48,7 +72,7 @@
 <section>
 	<ContentContainer class="updates-content">
 		<SectionTitle>Updates</SectionTitle>
-		Training and fundraising have continued in earnest. You can follow Matt and Mike’s training journey on the Strava links provided at the top of the webpage. You can also follow us on social media.
+		Follow us as we work our way to the 2025 Boston Marathon on 4/21/25!
 		<Collapse bind:isExpanded={isExpanded} showFade>
 			<ul>
 				{#each visibleUpdates as { date, body } (date)}
