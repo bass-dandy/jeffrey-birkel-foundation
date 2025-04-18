@@ -69,7 +69,7 @@
 	h1 {
 		margin: 0;
 		padding: 0;
-		color: var(--color-secondary);
+		color: var(--color-primary);
 	}
 
 	.funding {

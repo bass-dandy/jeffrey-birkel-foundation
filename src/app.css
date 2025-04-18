@@ -14,6 +14,7 @@
 :root {
 	--color-white: #fff;
 	--color-black: #000;
+	--color-primary: rgb(190, 55, 40);
 	--color-secondary: #BA5936;
 	--color-accent: rgb(246, 166, 81);
 	--color-darken: rgba(0, 0, 0, 0.05);
