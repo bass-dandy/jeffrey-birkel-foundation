@@ -2,7 +2,7 @@
 	import ContentContainer from './content-container.svelte';
 	import Video from './video.svelte';
 
-	const progress = 46261;
+	const progress = 47406;
 </script>
 
 <div class="hero">
