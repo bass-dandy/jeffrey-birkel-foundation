@@ -111,6 +111,7 @@
 		overflow: hidden;
 		color: var(--color-white);
 		transition: transform 0.1s ease-out;
+		background: var(--color-black);
 
 		&:hover, &:focus {
 			transform: scale(1.02);
