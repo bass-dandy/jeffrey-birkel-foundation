@@ -7,6 +7,18 @@
 
 	const updates = [
 		{
+			date: '6/10/25',
+			body: "Coming Soon! The Peoria Steamboat Classic on June 14th, 2025. Matt decided he wants to have a go at pushing Jeff and so they've entered the 4 mile race as a duo team. This time Mike will be the accompanying runner and will be shooting for a respectable time since he is still marathon fit. Matt is glad the course is relatively flat!",
+		},
+		{
+			date: '5/21/25 - Post Race Interview with WCCO CBS Minneapolis',
+			body: 'Jeff and Mike were asked to come back to the studio for a live post race interview. Mike was so well spoken! <a href="https://youtu.be/WGAx0t3JrMk?feature=shared" target="__blank">Check it out on YouTube!</a>',
+		},
+		{
+			date: '4/12/25 - The Boston Marathon',
+			body: 'What a journey! What a day! What a moment to actually cross that finish line! What a heartfelt, loving gift to Jeff from the boys and family!  To quote Jeff, "I feel beyond blest, thankful, and grateful. The whole thing turned out better than I ever imagined. I thank all the people that helped make this happen. All of our donors including Bank of America that donated an extra $6K, the folks at the Nebraska State Fair Boston-qualifying Marathon, the ALS Association and the Boston Athletic Association for the Duo entry, Adaptive Star for rush manufacturing our pushchair, our attorney Brennon Malcom in Cozad Nebraska for creating our 501(c)(3) pro bono, my stepson for creating and maintaining our website, and of course my boys, their wives, and my wife. This truly was a family effort that required significant sacrifice and commitment, but one given freely from the heart. We thank God for keeping our family all safe, healthy, and strong throughout this journey, and for connecting us with all these wonderful people that helped make this happen. I am and always will be grateful. I am so blest. These are memories I will cherish forever. Thank you all!"  Check out the short videos we took during the race to capture the moment on <a href="https://www.youtube.com/@jfbfound" target="__blank">our YouTube Channel</a>!',
+		},
+		{
 			date: '4/8/25',
 			body: 'The Boston Athletic Association awarded us two finish line tickets for having raised more than $25K by April 1st.',
 		},
@@ -72,13 +84,12 @@
 <section>
 	<ContentContainer class="updates-content">
 		<SectionTitle>Updates</SectionTitle>
-		Follow us as we work our way to the 2025 Boston Marathon on 4/21/25!
 		<Collapse bind:isExpanded={isExpanded} showFade>
 			<ul>
 				{#each visibleUpdates as { date, body } (date)}
 					<li>
 						<h3>{date}</h3>
-						<p>{body}</p>
+						<p>{@html body}</p>
 					</li>
 				{/each}
 			</ul>

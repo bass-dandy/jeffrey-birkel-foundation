@@ -2,7 +2,7 @@
 	import ContentContainer from './content-container.svelte';
 	import Video from './video.svelte';
 
-	const progress = 47406;
+	const progress = 51233;
 </script>
 
 <div class="hero">
@@ -13,7 +13,7 @@
 				<h1>Jeffrey F. Birkel Foundation</h1>
 				Donate to fund ALS research and help Jeff get to Boston!
 				<div class="funding">
-					${progress.toLocaleString()} raised of $40,000 goal (updated daily)
+					${progress.toLocaleString()} raised of $40,000 goal
 					<div class="progress">
 						<div
 							class="progress-fill"
