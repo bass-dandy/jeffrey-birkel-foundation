@@ -13,13 +13,7 @@
 				<h1>Jeffrey F. Birkel Foundation</h1>
 				Donate to fund ALS research and help Jeff get to Boston!
 				<div class="funding">
-					${progress.toLocaleString()} raised of $40,000 goal
-					<div class="progress">
-						<div
-							class="progress-fill"
-							style={`width: ${Math.floor(progress / 40000 * 100)}%;`}
-						/>
-					</div>
+					${progress.toLocaleString()} raised and counting!
 				</div>
 			</div>
 		</div>
@@ -73,23 +67,7 @@
 	}
 
 	.funding {
-		margin: var(--spacing-md) 0;
-	}
-
-	.progress {
-		width: 100%;
-		height: 10px;
-		border-radius: 6px;
-		background: var(--color-black);
-		border: 1px solid var(--color-black);
-		overflow: hidden;
-		margin-top: var(--spacing-xs);
-	}
-
-	.progress-fill {
-		height: 100%;
-		background: var(--color-accent);
-		max-width: 100%;
+		margin: var(--spacing-md) 0 0;
 	}
 
 	.banner {
