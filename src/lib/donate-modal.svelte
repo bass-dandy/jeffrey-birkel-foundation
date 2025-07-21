@@ -17,7 +17,7 @@
 	<div class="scroll-area">
 		<div class="content">
 			<span>
-				The ALS Association has set us up with a <a href="https://www.givengain.com/donate/ap/89890#amount" target="__blank" rel="noopener noreferrer">GivenGain campaign</a> for further fundraising! If you would would prefer to contribute to the Jeffrey Birkel Foundation directly, we gladly accept PayPal or Venmo:
+				We are currently fundraising for our local ALS community via <a href="https://secure.alsunitedchicago.org/site/TR/Endurance/General?team_id=3443&pg=team&fr_id=1180" target="__blank" rel="noopener noreferrer">ALS United</a>! If you would would prefer to contribute to the Jeffrey Birkel Foundation directly, we gladly accept PayPal or Venmo:
 			</span>
 			<PayLinks />
 			you can also send a payment through mail to:
