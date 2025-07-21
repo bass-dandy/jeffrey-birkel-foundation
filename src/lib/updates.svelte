@@ -1,9 +1,31 @@
 <script lang="ts">
+	import FacebookIcon from '$svg/facebook-f-brands-solid.svg?component';
+	import InstagramIcon from '$svg/instagram-brands-solid.svg?component';
+	import YouTubeIcon from '$svg/youtube-brands-solid.svg?component';
+
 	import Collapse from './collapse.svelte';
 	import ContentContainer from './content-container.svelte';
 	import SectionTitle from './section-title.svelte';
 
-	const FOLD_IDX = 4;
+	const linkConfig = [
+		{
+			name: 'Facebook',
+			url: 'https://www.facebook.com/jfbfound',
+			Icon: FacebookIcon,
+		},
+		{
+			name: 'Instagram',
+			url :'https://www.instagram.com/jfbfound/',
+			Icon: InstagramIcon,
+		},
+		{
+			name: 'YouTube',
+			url :'https://www.youtube.com/@jfbfound',
+			Icon: YouTubeIcon,
+		},
+	];
+
+	const FOLD_IDX = 5;
 
 	const updates = [
 		{
@@ -112,8 +134,18 @@
 <section>
 	<ContentContainer class="updates-content">
 		<SectionTitle>Updates</SectionTitle>
+		You can also follow via
+		<ul class="socials-list">
+			{#each linkConfig as { name, url, Icon } (name)}
+				<li>
+					<a href={url} target="__blank" rel="noopener noreferrer">
+						<Icon fill="currentColor" height="1rem" /> {name}
+					</a>
+				</li>
+			{/each}
+		</ul>
 		<Collapse bind:isExpanded={isExpanded} showFade>
-			<ul>
+			<ul class="updates-list">
 				{#each visibleUpdates as { date, body } (date)}
 					<li>
 						<h3>{date}</h3>
@@ -125,7 +157,9 @@
 	</ContentContainer>
 </section>
 
-<style>
+<style lang="scss">
+	@import '../mixins.scss';
+
 	section {
 		padding: var(--spacing-xl) 0 0;
 	}
@@ -139,9 +173,40 @@
 		padding: 0;
 	}
 
-	ul {
+	.socials-list, .updates-list {
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
+	}
+
+	.socials-list {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-md);
+	}
+
+	.socials-list a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--spacing-sm);
+		padding: var(--spacing-xs) var(--spacing-lg);
+		color: var(--color-secondary);
+		text-decoration: none;
+		border: 1px solid var(--color-secondary);
+		border-radius: 5px;
+	}
+
+	.socials-list a:hover {
+		background-color: var(--color-darken);
+	}
+
+	@include breakpoint-sm {
+		.socials-list {
+			flex-direction: row;
+		}
+		.socials-list a {
+			justify-content: flex-start;
+		}
 	}
 </style>
