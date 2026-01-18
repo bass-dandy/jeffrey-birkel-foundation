@@ -5,7 +5,7 @@
 <section>
 	<ContentContainer>
 		<p>
-			Before his diagnosis, Jeff was an avid distance runner (he's run 10 marathons and one Grand Canyon Rim-to-Rim). Jeff’s sons, Matt &amp; Mike, followed in Jeff’s footsteps as they picked up running at a young age.
+			Before his diagnosis, Jeff was an avid distance runner (he had run 10 marathons and one Grand Canyon Rim-to-Rim). Jeff’s sons, Matt &amp; Mike, followed in Jeff’s footsteps as they picked up running at a young age.
 		</p>
 		<p>
 			Matt &amp; Mike had recently run the 2023 Boston Marathon, and after receiving Jeff’s diagnosis, they wanted to do something special for their dad – on Father’s Day of 2024 they told Jeff they wanted to run Boston again, but this time with Jeff riding along in a racing pushchair. However, getting accepted into Boston is no easy task.

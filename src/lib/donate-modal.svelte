@@ -22,7 +22,7 @@
 			<PayLinks />
 			you can also send a payment through mail to:
 			<div class="address">
-				{'The Jeffrey F Birkel Foundation\n30090 E McCullough Rd\nBrady, Nebraska 69123'}
+				{'The Jeffrey F Birkel Foundation\n30099 E McCullough Rd\nBrady, Nebraska 69123'}
 			</div>
 			Your support is greatly appreciated and 100% of your donation will go to the Foundation's mission. Thank you!
 			<span>

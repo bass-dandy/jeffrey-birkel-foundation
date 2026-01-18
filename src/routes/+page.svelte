@@ -5,6 +5,7 @@
 	import OurStoryCont from '$lib/our-story-cont.svelte';
 	import OurMission from '$lib/our-mission.svelte';
 	import ToEleven from '$lib/to-eleven.svelte';
+	import Rome from '$lib/rome.svelte';
 	import Boston from '$lib/boston.svelte';
 	import Updates from '$lib/updates.svelte';
 	import SocialMedia from '$lib/social-media.svelte';
@@ -22,6 +23,7 @@
 	<OurStoryCont />
 	<OurMission />
 	<ToEleven />
+	<Rome />
 	<Boston />
 	<Updates />
 	<SocialMedia />
