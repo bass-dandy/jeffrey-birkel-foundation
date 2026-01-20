@@ -17,7 +17,7 @@
 	<div class="scroll-area">
 		<div class="content">
 			<span>
-				We are currently fundraising for our local ALS community via <a href="https://secure.alsunitedchicago.org/site/TR/Endurance/General?team_id=3443&pg=team&fr_id=1180" target="__blank" rel="noopener noreferrer">ALS United</a>! If you would would prefer to contribute to the Jeffrey Birkel Foundation directly, we gladly accept PayPal or Venmo:
+				We are currently fundraising for the 2026 Rome marathon! If you would would like to contribute, we gladly accept PayPal or Venmo:
 			</span>
 			<PayLinks />
 			you can also send a payment through mail to:
