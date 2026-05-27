@@ -17,7 +17,7 @@
 	<div class="scroll-area">
 		<div class="content">
 			<span>
-				We are currently fundraising for the 2026 Rome marathon! If you would would like to contribute, we gladly accept PayPal or Venmo:
+				We are currently fundraising for the 2026 Chicago River Swim! If you would would like to contribute, you can donate directly on the <a href="https://runsignup.com/jeffandpaulchicagoriverswimteam" target="__blank">river swim website</a>. We also gladly accept PayPal or Venmo:
 			</span>
 			<PayLinks />
 			you can also send a payment through mail to:

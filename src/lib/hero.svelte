@@ -2,7 +2,8 @@
 	import ContentContainer from './content-container.svelte';
 	import Video from './video.svelte';
 
-	const progress = 61923;
+	const progressTotal = 61923;
+	const progressThisYear = 24182;
 </script>
 
 <div class="hero">
@@ -11,7 +12,7 @@
 			<img class="logo" src="images/logo.png" alt="" />
 			<div class="text">
 				<h1>Jeffrey F. Birkel Foundation</h1>
-				Donate to fund ALS research - ${progress.toLocaleString()} raised and counting!
+				Donate to fund ALS research - ${progressThisYear.toLocaleString()} raised in 2026, ${progressTotal.toLocaleString()} raised in total!
 				<div class="caringbridge">
 					To read updates directly from Jeff, check out his <a href="https://www.caringbridge.org/site/1450e2cb-11b0-3f60-8619-cca28583b328" target="_blank">CaringBridge</a>
 				</div>
